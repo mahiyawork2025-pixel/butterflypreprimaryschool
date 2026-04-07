@@ -45,7 +45,9 @@ section {
 }
 
 .logo {
-    height: 50px;
+    height: 45px;
+    width: auto;
+    object-fit: contain;
 }
 
 .navbar nav a {
@@ -179,6 +181,10 @@ footer {
 
 /* MOBILE FIX */
 @media (max-width: 768px) {
+    .logo {
+        height: 35px;
+    }
+}
 
 .navbar {
     flex-direction: column;
@@ -210,4 +216,13 @@ section {
     padding: 50px 15px;
 }
 
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar img {
+    margin-right: 10px;
 }
