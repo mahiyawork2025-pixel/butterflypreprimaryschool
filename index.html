@@ -1,78 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Butterfly Pre-Primary School</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Butterfly Pre-Primary School</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-<header>
-    <div class="navbar">
-        <img src="/logo.png" class="logo">
-        <h2>Butterfly Pre-Primary School</h2>
-
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="admissions.html">Admissions</a>
-        </nav>
-    </div>
+<header class="navbar">
+    <img src="logo.png">
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
 </header>
 
-<!-- HERO SECTION -->
-<section class="hero">
-    <div class="hero-text">
+<section id="home" class="hero">
+    <div>
         <h1>BUTTERFLY</h1>
         <h2>Pre-Primary School</h2>
         <p>KINDERGARTEN • LKG • UKG</p>
     </div>
 
-    <div class="hero-img">
-        <img src="/kids.png" alt="kids">
+    <div>
+        <img src="kids.png">
     </div>
 </section>
 
-<section class="trust">
-    <div class="trust-box">
-        <h3>Safe Environment</h3>
-        <p>Child-friendly and secure campus</p>
-    </div>
-
-    <div class="trust-box">
-        <h3>Qualified Teachers</h3>
-        <p>Experienced and trained staff</p>
-    </div>
-
-    <div class="trust-box">
-        <h3>Activity Based Learning</h3>
-        <p>Fun + educational approach</p>
-    </div>
-</section>
-
-<!-- FEATURES -->
 <section class="features">
     <h2>Our Features</h2>
-   <div class="features-grid">
-    <div>Child Friendly Environment</div>
-    <div>Basic Skills Curriculum</div>
-    <div>Cognitive & Emotional Development</div>
-    <div>Activity Based Learning</div>
-    <div>Audio-Visual Learning</div>
-    <div>Indoor & Outdoor Activities</div>
-    <div>Montessori Classrooms</div>
-    <div>Trained Teachers</div>
-</div>
+    <div class="features-grid">
+        <div>Child Friendly Environment</div>
+        <div>Basic Skills Curriculum</div>
+        <div>Cognitive Development</div>
+        <div>Activity Based Learning</div>
+        <div>Audio-Visual Learning</div>
+        <div>Outdoor Activities</div>
+        <div>Montessori Classrooms</div>
+        <div>Trained Teachers</div>
+    </div>
 </section>
 
-<!-- CONTACT -->
-<section class="contact">
+<section id="gallery">
+    <h2>Gallery</h2>
+
+    <div class="gallery-grid">
+        <img src="g1.jpg">
+        <img src="g2.jpg">
+        <img src="g3.jpg">
+        <img src="g4.jpg">
+        <img src="g5.jpeg">
+        <img src="g6.jpeg">
+        <img src="g7.jpeg">
+        <img src="g8.jpeg">
+    </div>
+</section>
+
+<section id="contact">
     <h2>Contact Us</h2>
-    <p>Near Dr. D.Y. Patil Hospital, Nakshatra Park, Kadamwadi, Kolhapur</p>
-    <p>📞 8975302702</p>
-    <p>📧 prochampslearning@gmail.com</p>
-</section> 
+
+    <div class="contact-links">
+
+        <a href="https://maps.google.com/?q=Dr+D+Y+Patil+Hospital+Kolhapur" target="_blank">
+            📍 View Location
+        </a>
+
+        <a href="tel:8975302702">
+            📞 Call Now
+        </a>
+
+        <a href="https://wa.me/918975302702" target="_blank">
+            💬 WhatsApp Enquiry
+        </a>
+
+        <a href="mailto:prochampslearning@gmail.com">
+            📧 Send Email
+        </a>
+
+    </div>
+</section>
+
+<section>
+    <p>Visitors: <span id="counter">0</span></p>
+</section>
+
+<script>
+let count = localStorage.getItem("visits") || 0;
+count++;
+localStorage.setItem("visits", count);
+document.getElementById("counter").innerText = count;
+</script>
 
 </body>
 </html>
