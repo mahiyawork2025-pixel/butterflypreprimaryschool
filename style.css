@@ -6,9 +6,6 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-
-    /* BACKGROUND FIX */
     background: linear-gradient(
         rgba(255, 240, 245, 0.9),
         rgba(240, 248, 255, 0.9)
@@ -16,8 +13,7 @@ body {
     url("background.jpg");
 
     background-size: cover;
-    background-attachment: fixed;
-    color: #333;
+    background-position: center;
 }
 
 /* MAIN CONTAINER */
@@ -27,7 +23,7 @@ section {
     padding: 80px 20px;
 }
 
-/* NAVBAR */
+/* NAVBAR*/
 .navbar {
     position: sticky;
     top: 0;
@@ -37,32 +33,45 @@ section {
     justify-content: space-between;
     align-items: center;
 
-    padding: 15px 40px;
+    padding: 12px 40px;
 
-    background: rgba(255,255,255,0.8);
-    backdrop-filter: blur(12px);
+    background: rgba(255,255,255,0.85);
+    backdrop-filter: blur(10px);
+
     border-bottom: 1px solid rgba(0,0,0,0.05);
 }
 
-.logo {
-    height: 40px;
-    width: auto;
-    object-fit: cover;
+/* LEFT SIDE */
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-.navbar nav a {
-    margin-left: 20px;
+/* LOGO FIX */
+.logo {
+    height: 45px;
+    width: auto;
+}
+
+/* SCHOOL NAME */
+.school-name {
+    font-weight: 600;
+    font-size: 16px;
+    color: #333;
+}
+
+/* NAV LINKS */
+.nav-links a {
+    margin-left: 25px;
     text-decoration: none;
     color: #444;
     font-weight: 500;
     transition: 0.3s;
 }
 
-.navbar nav a:hover {
+.nav-links a:hover {
     color: #ff8fb1;
-}
-.navbar nav a {
-    margin-left: 25px;
 }
 
 /* HERO */
@@ -229,3 +238,23 @@ section {
 .navbar img {
     margin-right: 10px;
 }
+.navbar {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+}
+
+.school-name {
+    font-size: 14px;
+    text-align: center;
+}
+
+.logo {
+    height: 35px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
