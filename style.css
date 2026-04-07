@@ -45,9 +45,9 @@ section {
 }
 
 .logo {
-    height: 45px;
+    height: 40px;
     width: auto;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .navbar nav a {
@@ -60,6 +60,9 @@ section {
 
 .navbar nav a:hover {
     color: #ff8fb1;
+}
+.navbar nav a {
+    margin-left: 25px;
 }
 
 /* HERO */
@@ -86,7 +89,7 @@ section {
 }
 
 .hero-img img {
-    width: 350px;
+    width: 300px;
 }
 
 /* FEATURES */
